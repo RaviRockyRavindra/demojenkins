@@ -10,6 +10,13 @@ agent {
 
 stages{
 
+stage("verify")    
+{
+    steps{
+    sh """echo "got that" """
+    }    
+}
+    
 stage("git clone")
 {
 steps{
